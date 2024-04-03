@@ -1,8 +1,8 @@
 ﻿class Musica
 {
     public string nome;
-    string artista;
-    string album;
-    int duracao;
-    bool disponivel;
+    public string artista;
+    public string album;
+    public int duracao;
+    public bool disponivel;
 }
