@@ -6,7 +6,7 @@
     public int Duracao { get; set; }
     public bool Disponivel { get; set; }
     // Expressão Lambda (get sucinto)
-    public String DescricaoResumida => 
+    private string DescricaoResumida => 
         $"A música {Nome} pertence a banda {Artista}";
 
     public void ExibirFichaTécnica()
