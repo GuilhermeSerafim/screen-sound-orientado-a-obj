@@ -1,6 +1,6 @@
 ﻿class Musica
 {
-    string nome;
+    public string nome;
     string artista;
     string album;
     int duracao;
