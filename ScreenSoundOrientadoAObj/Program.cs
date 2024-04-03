@@ -14,13 +14,15 @@
 //musica2.ExibirFichaTécnica();
 
 // Desafio 1
-ContaBancaria contaBancaria1 =  new ContaBancaria();
-contaBancaria1.numIndicador = 1;
-contaBancaria1.titular = "Guiler";
-contaBancaria1.saldo = 1200000.50;
-contaBancaria1.senha = "DarkCat!203";
-contaBancaria1.ExibirInformacoesDaConta();
+//ContaBancaria contaBancaria1 =  new ContaBancaria();
+//contaBancaria1.numIndicador = 1;
+//contaBancaria1.titular = "Guiler";
+//contaBancaria1.saldo = 1200000.50;
+//contaBancaria1.senha = "DarkCat!203";
+//contaBancaria1.ExibirInformacoesDaConta();
 
 // Desafio 2
-
-    
+Carro carro1 = new Carro();
+carro1.Acelerar();
+carro1.Buzinando();
+carro1.Freiar();
