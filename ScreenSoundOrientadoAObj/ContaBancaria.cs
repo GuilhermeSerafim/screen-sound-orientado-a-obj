@@ -1,16 +1,16 @@
 ﻿// Desafio 1
 class ContaBancaria
 {
-    public int numIndicador;
-    public string titular;
-    public double saldo;
-    public string senha;
+    public int NumIndicador { get; set; }
+    public string Titular { get; set; }
+    public double Saldo { get; set; }
+    public string Senha { get; set; }
 
     public void ExibirInformacoesDaConta()
     {
-        Console.WriteLine($"Número Indicador: {numIndicador}");
-        Console.WriteLine($"Titular: {titular}");
-        Console.WriteLine($"Saldo da conta: {saldo}");
-        Console.WriteLine($"Senha: {senha}");
+        Console.WriteLine($"Número Indicador: {NumIndicador}");
+        Console.WriteLine($"Titular: {Titular}");
+        Console.WriteLine($"Saldo da conta: {Saldo}");
+        Console.WriteLine($"Senha: {Senha}");
     }
 }
