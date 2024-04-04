@@ -26,7 +26,26 @@
 //queen.AdicionarAlbum(albumDoQueen);
 //queen.ExibirDiscografia();
 
-// Desafio do construtor
-Titular gui = new Titular("Guilherme", "12321321", "Treze de maio");
-Conta guiConta = new Conta(gui, 0001, 230103, 10000.10, 20000.0);
-guiConta.ExibirInformacoes();
+Podcast astros = new("Guiler", "CosmoCast");
+Episodio ep1 = new(01, "Interestelar")
+{
+    DuracaoEmMinutos = 300
+};
+Episodio ep2 = new(02, "Materia escura")
+{
+    DuracaoEmMinutos = 321
+};
+Episodio ep3 = new(03, "Relatividade estrita")
+{
+    DuracaoEmMinutos = 399
+};
+ep1.AdicionarConvidados("Serjão");
+ep2.AdicionarConvidados("Bill Nelson");
+ep3.AdicionarConvidados("Elon Musk");
+ep3.AdicionarConvidados("Steve Jobs");
+
+astros.AdicionarEpisodio(ep1);
+astros.AdicionarEpisodio(ep2);
+astros.AdicionarEpisodio(ep3);
+
+astros.ExibirDetalhesPodcast();
