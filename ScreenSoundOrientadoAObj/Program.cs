@@ -35,13 +35,6 @@
 //carro.Fabricante = "Airton Senna";
 //carro.ExibirFichaDoCarro();
 
-//// Desafio 5
-//Produto produto = new Produto();
-//produto.Nome = "Kit 4 leite";
-//produto.Marca = "Leitosa";
-//produto.Estoque = -1;
-//produto.Preco = -2;
-//produto.MostrarProduto();
 
 //Album albumDoQueen = new Album();
 //albumDoQueen.Nome = "A night at the opera";
@@ -58,14 +51,35 @@
 //albumDoQueen.AdicionarMusica(musica2);
 //albumDoQueen.ExibirMusicasDoAlbum();
 
-Titular guiler = new Titular();
-guiler.Cpf = "13213-123";
-guiler.Nome = "Guilherme";
-guiler.Endereco = "Rua camasati";
-Conta contaGui = new Conta();
-contaGui.Titular = guiler;
-contaGui.Agencia = 0001;
-contaGui.NumeroDaConta = 1;
-contaGui.Saldo = 0.10;
-contaGui.Limite = 1111111111000000000000.10;
-contaGui.ExibirInformacoes(); 
+//// Desafio prático (perdi as contas)
+//Titular guiler = new Titular();
+//guiler.Cpf = "13213-123";
+//guiler.Nome = "Guilherme";
+//guiler.Endereco = "Rua camasati";
+//Conta contaGui = new Conta();
+//contaGui.Titular = guiler;
+//contaGui.Agencia = 0001;
+//contaGui.NumeroDaConta = 1;
+//contaGui.Saldo = 0.10;
+//contaGui.Limite = 1111111111000000000000.10;
+//contaGui.ExibirInformacoes(); 
+
+
+// Desafio prático - Estoque de produtos
+Produto produto = new Produto();
+produto.Nome = "Leite";
+produto.Marca = "Leitosa";
+produto.Preco = -2;
+produto.Estoque = 2;
+Produto produto2 = new Produto();
+produto2.Nome = "Faca";
+produto2.Marca = "Afiada";
+produto2.Preco = 10.10;
+produto2.Estoque = 2;
+
+
+
+EstoqueDeProdutos estoqueDeProdutos = new EstoqueDeProdutos();
+estoqueDeProdutos.AdicionarProduto(produto);
+estoqueDeProdutos.AdicionarProduto(produto2);
+estoqueDeProdutos.ExibirProdutos();
