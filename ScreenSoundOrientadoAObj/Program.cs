@@ -65,21 +65,44 @@
 //contaGui.ExibirInformacoes(); 
 
 
-// Desafio prático - Estoque de produtos
-Produto produto = new Produto();
-produto.Nome = "Leite";
-produto.Marca = "Leitosa";
-produto.Preco = -2;
-produto.Estoque = 2;
-Produto produto2 = new Produto();
-produto2.Nome = "Faca";
-produto2.Marca = "Afiada";
-produto2.Preco = 10.10;
-produto2.Estoque = 2;
+//// Desafio prático - Estoque de produtos
+//Produto produto = new Produto();
+//produto.Nome = "Leite";
+//produto.Marca = "Leitosa";
+//produto.Preco = -2;
+//produto.Estoque = 2;
+//Produto produto2 = new Produto();
+//produto2.Nome = "Faca";
+//produto2.Marca = "Afiada";
+//produto2.Preco = 10.10;
+//produto2.Estoque = 2;
 
 
 
-EstoqueDeProdutos estoqueDeProdutos = new EstoqueDeProdutos();
-estoqueDeProdutos.AdicionarProduto(produto);
-estoqueDeProdutos.AdicionarProduto(produto2);
-estoqueDeProdutos.ExibirProdutos();
+//EstoqueDeProdutos estoqueDeProdutos = new EstoqueDeProdutos();
+//estoqueDeProdutos.AdicionarProduto(produto);
+//estoqueDeProdutos.AdicionarProduto(produto2);
+//estoqueDeProdutos.ExibirProdutos();
+
+// Desafio da Escola
+// Inicialização simplicaficada
+Aluno aluno1 = new Aluno
+{
+    Nome = "Gui",
+    Idade = 19,
+    Notas = new List<double> { 9, 10, 8}
+};
+Aluno aluno2 = new Aluno
+{
+    Nome = "Theus",
+    Idade = 19,
+    Notas = new List<double> { 9, 6, 8}
+};
+
+Disciplina disciplina = new Disciplina
+{
+    NomeDisciplina = "Matemática"
+};
+disciplina.AdicionarAluno(aluno1);
+disciplina.AdicionarAluno(aluno2);
+disciplina.MostrarAlunosDisciplina();
