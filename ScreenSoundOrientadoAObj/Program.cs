@@ -86,23 +86,26 @@
 
 // Desafio da Escola
 // Inicialização simplicaficada
-Aluno aluno1 = new Aluno
-{
-    Nome = "Gui",
-    Idade = 19,
-    Notas = new List<double> { 9, 10, 8}
-};
-Aluno aluno2 = new Aluno
-{
-    Nome = "Theus",
-    Idade = 19,
-    Notas = new List<double> { 9, 6, 8}
-};
+//Aluno aluno1 = new Aluno
+//{
+//    Nome = "Gui",
+//    Idade = 19,
+//    Notas = new List<double> { 9, 10, 8}
+//};
+//Aluno aluno2 = new Aluno
+//{
+//    Nome = "Theus",
+//    Idade = 19,
+//    Notas = new List<double> { 9, 6, 8}
+//};
 
-Disciplina disciplina = new Disciplina
-{
-    NomeDisciplina = "Matemática"
-};
-disciplina.AdicionarAluno(aluno1);
-disciplina.AdicionarAluno(aluno2);
-disciplina.MostrarAlunosDisciplina();
+//Disciplina disciplina = new Disciplina
+//{
+//    NomeDisciplina = "Matemática"
+//};
+//disciplina.AdicionarAluno(aluno1);
+//disciplina.AdicionarAluno(aluno2);
+//disciplina.MostrarAlunosDisciplina();
+
+Restaurante restaurante = new Restaurante();
+restaurante.IniciarReserva();
