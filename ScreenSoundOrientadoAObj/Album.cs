@@ -1,11 +1,14 @@
 ﻿class Album
 {
-    private List<Musica> musicas = new List<Musica>();  
-    public string Nome { get; set; }
+    public Album(string nome) => Nome = nome;
+
+    private List<Musica> musicas = new List<Musica>();
+    public string Nome { get; }
     public int DuracaoTotal => musicas.Sum(musica => musica.Duracao); // Soma das músicas
 
     public void AdicionarMusica(Musica musica)
     {
+        // Posso adicionar lógicas internas aqui
         musicas.Add(musica);
     }
 
